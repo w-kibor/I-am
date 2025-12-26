@@ -15,7 +15,7 @@ export function Hero() {
             Wilkister Kibor
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-4">
-            Data Scientist
+            Data Scientist & AI Engineer
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Specializing in Data Science, Machine Learning, and Artificial Intelligence. 
