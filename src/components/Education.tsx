@@ -7,9 +7,9 @@ const education = [
   {
     degree: "Bachelor of Science in Information Technology",
     specialization: "Data Science, Machine Learning & AI",
-    school: "University Name",
-    location: "Location",
-    period: "2021 - 2025",
+    school: "Kabarak University",
+    location: "Nakuru, Kenya",
+    period: "2022 - 2026",
     status: "Currently Pursuing",
     description: "Specializing in Data Science, Machine Learning, and Artificial Intelligence with hands-on experience in building real-world applications and solving complex data problems.",
     coursework: [
