@@ -103,9 +103,9 @@ export function Projects() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, index) => (
-                      <Badge 
-                        key={index} 
-                        variant="secondary" 
+                      <Badge
+                        key={index}
+                        variant="secondary"
                         className="text-xs bg-accent/10 text-accent border-accent/20 hover:bg-accent hover:text-white transition-colors"
                       >
                         {tag}
@@ -141,7 +141,7 @@ export function Projects() {
             Interested in seeing more of my work or collaborating on a project?
           </p>
           <Button className="bg-accent hover:bg-accent/90" asChild>
-            <a href="https://github.com/wilkister-kibor" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/w-kibor" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
               View All Projects on GitHub
             </a>
