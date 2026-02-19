@@ -10,22 +10,22 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="w-full min-h-screen items-center justify-center pt-72 md:pt-80 bg-gradient-to-br from-background via-secondary/30 to-accent/10">
+    <section id="home" className="w-full min-h-screen flex flex-col items-center justify-center pt-32 md:pt-40 bg-gradient-to-br from-background via-secondary/30 to-accent/10">
       <div className="pt-4 w-full flex justify-center relative z-10">
         <img
           src={chem4}
           alt="Wilkister Kibor"
           className="rounded-full object-cover border-2 border-primary shadow-lg"
-          style={{ width: '200px', height: '200px', objectPosition: 'center 20%' }}
+          style={{ width: '300px', height: '300px', objectPosition: 'center 20%' }}
         />
       </div>
-      <div className="container mx-auto px-4 text-center"> 
+      <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent text-center">
-              Wilkister Kibor
-            </h1>
-          
+
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent text-center">
+            Wilkister Kibor
+          </h1>
+
           <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-4">
             Data Scientist & AI Engineer
           </h2>
