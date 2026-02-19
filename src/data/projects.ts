@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -58,5 +58,16 @@ export const projects: Project[] = [
         githubUrl: "https://github.com/wilkister-kibor/africa-news-scraper",
         metrics: "5,000+ Articles/Week",
         icon: Globe
+    },
+    {
+        id: "5",
+        title: "The Artisan Haven",
+        description: "Cozy e-commerce website for handcrafted mats and luxury carpets",
+        longDescription: "The Artisan Haven is a cozy and elegant e-commerce website for discovering and purchasing handcrafted mats, luxury carpets, and timeless antique pieces. The platform combines warm aesthetics with modern functionality, offering users a seamless shopping experience that feels both homely and high-end.",
+        image: "/images/projects/artisan-haven.png",
+        tags: ["React", "E-commerce", "TypeScript", "Tailwind CSS", "Responsive Design"],
+        liveUrl: "https://the-artisan-haven.vercel.app/",
+        metrics: "Full E-commerce Platform",
+        icon: ShoppingBag
     }
 ];
