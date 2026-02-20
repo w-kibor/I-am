@@ -80,5 +80,16 @@ export const projects: Project[] = [
         liveUrl: "https://tutoring-website-neon.vercel.app/",
         metrics: "Tutoring Platform",
         icon: BookOpen
+    },
+    {
+        id: "7",
+        title: "Own Kenya",
+        description: "Redefining luxury real estate in East Africa.",
+        longDescription: "Own Kenya is an AI powered real estate platform that connects sophisticated buyers with Kenya's most prestigious residences. The experience blends curated listings, smart discovery, and a refined visual presentation tailored for luxury property search.",
+        image: "/images/Own%20Kenya.png",
+        tags: ["React", "AI", "Real Estate", "TypeScript", "Vite"],
+        liveUrl: "https://own-kenya.vercel.app/",
+        metrics: "Luxury Real Estate",
+        icon: Globe
     }
 ];
