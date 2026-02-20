@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe, ShoppingBag } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -69,5 +69,16 @@ export const projects: Project[] = [
         liveUrl: "https://the-artisan-haven.vercel.app/",
         metrics: "Full E-commerce Platform",
         icon: ShoppingBag
+    },
+    {
+        id: "6",
+        title: "Tutor Trove",
+        description: "Comprehensive tutoring platform connecting students with educators",
+        longDescription: "Tutor Trove is a comprehensive tutoring website designed to connect students with qualified educators. The platform provides an intuitive interface for browsing tutors, scheduling sessions, and managing educational progress. Features include real-time communication, session scheduling, progress tracking, and a robust review system to ensure quality education delivery.",
+        image: "/images/projects/tutor-trove.png",
+        tags: ["React", "Education Tech", "TypeScript", "Tailwind CSS", "Scheduling"],
+        liveUrl: "https://tutoring-website-neon.vercel.app/",
+        metrics: "Tutoring Platform",
+        icon: BookOpen
     }
 ];
