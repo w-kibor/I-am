@@ -10,8 +10,8 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="w-full min-h-screen flex flex-col items-center justify-center pt-32 md:pt-40 bg-gradient-to-br from-background via-secondary/30 to-accent/10">
-      <div className="pt-4 w-full flex justify-center relative z-10">
+    <section id="home" className="w-full min-h-screen flex flex-col items-center justify-start bg-gradient-to-br from-background via-secondary/30 to-accent/10">
+      <div className="w-full flex justify-center relative z-10">
         <img
           src={chem4}
           alt="Wilkister Kibor"

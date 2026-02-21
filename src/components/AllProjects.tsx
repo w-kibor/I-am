@@ -25,7 +25,7 @@ export function AllProjects() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     {projects.map((project) => {
                         const IconComponent = project.icon;
                         return (
@@ -40,16 +40,16 @@ export function AllProjects() {
                                         {project.metrics}
                                     </div>
                                 </div>
-                                <CardHeader>
+                                <CardHeader className="px-4 pt-4">
                                     <div className="flex items-center gap-3 mb-3">
                                         <div className="p-2 bg-accent/10 rounded-lg">
                                             <IconComponent className="w-5 h-5 text-accent" />
                                         </div>
-                                        <CardTitle className="text-xl text-primary line-clamp-1">{project.title}</CardTitle>
+                                        <CardTitle className="text-lg text-primary line-clamp-1">{project.title}</CardTitle>
                                     </div>
-                                    <CardDescription className="text-sm line-clamp-3">{project.longDescription}</CardDescription>
+                                    <CardDescription className="text-xs leading-relaxed line-clamp-3">{project.longDescription}</CardDescription>
                                 </CardHeader>
-                                <CardContent>
+                                <CardContent className="px-4">
                                     <div className="flex flex-wrap gap-2 mb-4">
                                         {project.tags.slice(0, 4).map((tag, index) => (
                                             <Badge
@@ -67,7 +67,7 @@ export function AllProjects() {
                                         )}
                                     </div>
                                 </CardContent>
-                                <CardFooter className="flex gap-3 mt-auto">
+                                <CardFooter className="flex gap-3 mt-auto px-4 pb-4">
                                     {project.githubUrl && (
                                         <Button variant="outline" size="sm" asChild className="flex-1 border-accent text-accent hover:bg-accent hover:text-white">
                                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">

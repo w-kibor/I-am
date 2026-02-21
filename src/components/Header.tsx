@@ -44,8 +44,8 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-background/90 backdrop-blur-md border-b border-border z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 h-16 bg-background/90 backdrop-blur-md border-b border-border z-50">
+      <div className="container mx-auto px-4 h-full flex items-center justify-between">
         <Link to="/" className="font-bold text-xl text-primary">Wilkister Kibor</Link>
 
         {/* Desktop Navigation */}
