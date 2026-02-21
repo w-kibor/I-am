@@ -8,6 +8,20 @@ import { Label } from './ui/label';
 import { Mail, MessageSquare, Send, Github, Linkedin, MapPin, Phone } from 'lucide-react';
 import { toast } from 'sonner@2.0.3';
 
+const MediumIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 1043.63 592.71"
+    aria-hidden="true"
+    focusable="false"
+    className={className}
+  >
+    <path
+      fill="currentColor"
+      d="M588.67 296.35c0 163.69-131.77 296.36-294.33 296.36S0 460.04 0 296.35 131.77 0 294.34 0s294.33 132.67 294.33 296.35zm322.95 0c0 154.16-65.88 279.07-147.17 279.07S617.28 450.51 617.28 296.35 683.16 17.28 764.45 17.28s147.17 124.91 147.17 279.07zm131.01 0c0 138.09-23.36 250.04-52.18 250.04s-52.18-111.95-52.18-250.04S961.63 46.31 990.45 46.31s52.18 111.95 52.18 250.04z"
+    />
+  </svg>
+);
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -115,6 +129,12 @@ export function Contact() {
                     <a href="https://linkedin.com/in/wilkister-kibor" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="w-4 h-4 mr-3" />
                       LinkedIn Profile
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" className="w-full justify-start border-accent text-accent hover:bg-accent hover:text-white" asChild>
+                    <a href="https://medium.com/@kiborwilkister" target="_blank" rel="noopener noreferrer">
+                      <MediumIcon className="w-4 h-4 mr-3" />
+                      Medium Profile
                     </a>
                   </Button>
                 </div>
@@ -236,6 +256,12 @@ export function Contact() {
               <a href="https://linkedin.com/in/wilkister-kibor" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn
+              </a>
+            </Button>
+            <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
+              <a href="https://medium.com/@kiborwilkister" target="_blank" rel="noopener noreferrer">
+                <MediumIcon className="w-4 h-4 mr-2" />
+                Medium
               </a>
             </Button>
             <Button variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
