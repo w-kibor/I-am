@@ -22,7 +22,7 @@ export const projects: Project[] = [
         image: "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzU4MzQ4MDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
         tags: ["Python", "scikit-learn", "Flask", "React", "Pandas", "Machine Learning"],
         githubUrl: "https://github.com/wilkister-kibor/power-outage-prediction",
-        liveUrl: "https://power-outage-dashboard.example.com",
+        liveUrl: "https://power-outage-prediction-ab1ben5kd-wilkister-kibors-projects.vercel.app/",
         metrics: "≈85% Accuracy",
         icon: Monitor
     },
