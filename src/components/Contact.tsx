@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
-import { Mail, MessageSquare, Send, Github, Linkedin, MapPin, Phone } from 'lucide-react';
+import { Mail, MessageSquare, Send, Github, Linkedin, MapPin } from 'lucide-react';
 import { toast } from 'sonner@2.0.3';
 
 const MediumIcon = ({ className }: { className?: string }) => (
@@ -23,6 +23,7 @@ const MediumIcon = ({ className }: { className?: string }) => (
 );
 
 export function Contact() {
+  const contactEmail = 'kiborwilkister29@gmail.com';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,10 +36,19 @@ export function Contact() {
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
 
+  const buildMailtoLink = () => {
+    const subject = encodeURIComponent(formData.subject || `Portfolio inquiry from ${formData.name || 'Website visitor'}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`,
+    );
+    return `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!serviceId || !templateId || !publicKey) {
-      toast.error('Email service is not configured yet.');
+      window.location.href = buildMailtoLink();
+      toast.info('Opening your email app to send this message.');
       return;
     }
 
