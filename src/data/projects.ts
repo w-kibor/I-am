@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -14,6 +14,17 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        id: "8",
+        title: "Claudia",
+        description: "AI-powered cooking companion for recipes and kitchen management",
+        longDescription: "Claudia is a personal AI-powered cooking companion designed to help users discover recipes, manage kitchen inventory, and get inspired with tailored meal ideas. The app combines a clean cooking workflow with AI-assisted inspiration to make everyday meal planning more practical and engaging.",
+        image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        tags: ["React", "TypeScript", "AI", "Recipes", "Kitchen Management", "Vercel"],
+        liveUrl: "https://claudia-sand.vercel.app/",
+        metrics: "AI Cooking Companion",
+        icon: ChefHat
+    },
     {
         id: "1",
         title: "Power Outage Prediction Dashboard",
