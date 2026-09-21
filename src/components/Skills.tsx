@@ -6,45 +6,57 @@ const skillCategories = [
   {
     icon: Code,
     title: "Programming Languages",
-    description: "Core programming languages for data science and development",
+    description: "Languages I use to build applications and solve technical problems",
     skills: [
       "Python",
-      "SQL",
-      "R",
-      "JavaScript"
+      "PostgreSQL",
+      "PHP",
+      "JavaScript",
+      "HTML",
+      "CSS"
     ]
   },
   {
     icon: Brain,
-    title: "Machine Learning",
-    description: "ML libraries and frameworks for building intelligent systems",
+    title: "Backend Development",
+    description: "Building APIs, business logic, and server-side applications",
     skills: [
-      "scikit-learn",
-      "TensorFlow",
-      "PyTorch",
-      "Keras"
+      "laravel",
+      "Rest APIs",
+      "Flask",
+      "PHP",
+      "Authentication",
+      "Database integration"
     ]
   },
   {
     icon: Database,
-    title: "Data Processing",
-    description: "Tools for data manipulation and analysis",
+    title: "Databases & Data",
+    description: "Working with structured data and application databases",
     skills: [
-      "pandas",
-      "NumPy",
-      "Apache Spark",
-      "ETL Pipelines"
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+      "MongoDB",
+      "Supabase",
+      "Pandas",
+      "Numpy"
     ]
   },
   {
     icon: BarChart3,
-    title: "Data Visualization",
-    description: "Creating compelling visual stories from data",
+    title: "AI & Machine Learning",
+    description: "Integrating intelligent capabilities into software applications",
     skills: [
-      "Matplotlib",
-      "Seaborn",
+      "scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "RAG",
+      "Keras",
       "Plotly",
-      "Tableau"
+      "Agentic AI",
+      "AI Agents",
+      "LLM Applications"
     ]
   },
   {
@@ -60,21 +72,24 @@ const skillCategories = [
   },
   {
     icon: Cloud,
-    title: "Cloud & Deployment",
-    description: "Cloud platforms and deployment technologies",
+    title: "Development & Deployment",
+    description: "Tools and technologies I use to build, manage, and deploy software",
     skills: [
-      "AWS Basics",
-      "Docker",
-      "Flask",
-      "React"
+      "Git",
+      "Github",
+      "Linux",
+      "Vercel",
+      "VS Code",
+      "Antigravity",
+      "Render"
     ]
   }
 ];
 
 const technologies = [
-  "Python", "SQL", "scikit-learn", "TensorFlow", "PyTorch", "pandas", "NumPy", 
+  "PHP", "Python", "PostgreSQL", "Laravel", "Rest APIs", "SQL", "scikit-learn", "TensorFlow", "PyTorch", "pandas", "NumPy",
   "Matplotlib", "Seaborn", "GitHub", "Git", "AWS", "Docker", "Flask", "React",
-  "Jupyter", "VS Code", "Tableau", "Apache Spark", "Keras", "Plotly"
+  "Jupyter", "VS Code", "Tableau", "Apache Spark", "Keras",
 ];
 
 export function Skills() {
@@ -84,7 +99,7 @@ export function Skills() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Technical Skills</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            A comprehensive toolkit for data science, machine learning, and AI development
+            A practical toolkit for building scalable applications, APIs, data-driven systems, and AI-powered solutions.
           </p>
         </div>
 
@@ -105,9 +120,9 @@ export function Skills() {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <Badge 
+                      <Badge
                         key={skillIndex}
-                        variant="secondary" 
+                        variant="secondary"
                         className="text-sm py-1.5 px-3 bg-accent/10 text-accent border-accent/20 hover:bg-accent hover:text-white transition-colors"
                       >
                         {skill}
@@ -124,9 +139,9 @@ export function Skills() {
           <h3 className="text-2xl font-bold mb-6 text-primary">Technologies & Tools</h3>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {technologies.map((tech, index) => (
-              <Badge 
-                key={index} 
-                variant="secondary" 
+              <Badge
+                key={index}
+                variant="secondary"
                 className="text-sm py-2 px-4 bg-accent/10 text-accent border-accent/20 hover:bg-accent hover:text-white transition-colors"
               >
                 {tech}
