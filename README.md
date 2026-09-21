@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-Hi 👋, I’m Chem — an IT student and aspiring software developer with a strong interest in web development, data, and AI-powered solutions.  
+Hi , I’m Wilkister Kibor — an IT student and aspiring software developer with a strong interest in web development, data, and AI-powered solutions.  
 This portfolio showcases my projects, skills, and experience as I grow in the tech space.
 
 ## 🔍 About the Portfolio
