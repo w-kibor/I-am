@@ -27,11 +27,10 @@ export function Hero() {
           </h1>
 
           <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-4">
-            Data Scientist & AI Engineer
+            Software Developer
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Specializing in Data Science, Machine Learning, and Artificial Intelligence.
-            Passionate about transforming data into actionable insights and building intelligent systems.
+            I’m a software developer focused on building practical digital solutions, from web applications and data-driven systems to AI-powered tools. I enjoy working across the stack, solving real-world problems, and turning ideas into usable products.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
