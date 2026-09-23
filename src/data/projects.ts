@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat, Truck } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -14,6 +14,17 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        id: "9",
+        title: "SwiftDrop",
+        description: "Errands platform connecting users with trained runners for personal shopping and deliveries",
+        longDescription: "SwiftDrop is an errands platform that connects individuals and businesses with trained runners. From personal shopping and parcel deliveries to business errands, SwiftDrop provides a fast, reliable solution to get everyday tasks done.",
+        image: "https://images.unsplash.com/photo-1526367790999-0150786686a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        tags: ["React", "TypeScript", "Errands", "Logistics", "Vercel"],
+        liveUrl: "https://swiftdrop2-kx5p.vercel.app/",
+        metrics: "Errands Platform",
+        icon: Truck
+    },
     {
         id: "8",
         title: "Claudia",
