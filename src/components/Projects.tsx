@@ -19,7 +19,7 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Real-world applications of data science and machine learning to solve complex problems
+            A selection of applications, platforms, and intelligent systems I’ve built while exploring software development, AI, data, and digital solutions.
           </p>
         </div>
 
