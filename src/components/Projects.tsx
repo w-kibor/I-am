@@ -27,61 +27,58 @@ export function Projects() {
           {featuredProjects.map((project) => {
             const IconComponent = project.icon;
             return (
-              <Card key={project.id} className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-l-accent">
-                <div className="h-40 overflow-hidden relative">
+              <Card key={project.id} className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-t-4 border-t-accent flex flex-col">
+                <div className="aspect-video overflow-hidden relative">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute top-3 left-3 bg-accent/90 text-white px-2.5 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-4 left-4 bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.metrics}
                   </div>
                 </div>
-                <CardHeader className="px-3 pt-3">
-                  <div className="flex items-center gap-2.5 mb-2">
-                    <div className="p-1.5 bg-accent/10 rounded-lg">
-                      <IconComponent className="w-4 h-4 text-accent" />
+                <CardHeader className="px-4 pt-4">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="p-2 bg-accent/10 rounded-lg">
+                      <IconComponent className="w-5 h-5 text-accent" />
                     </div>
-                    <CardTitle className="text-base text-primary line-clamp-1">{project.title}</CardTitle>
+                    <CardTitle className="text-lg text-primary line-clamp-1">{project.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-xs leading-relaxed line-clamp-2">{project.longDescription}</CardDescription>
+                  <CardDescription className="text-xs leading-relaxed line-clamp-3">{project.longDescription}</CardDescription>
                 </CardHeader>
-                <CardContent className="px-3">
-                  <div className="flex flex-wrap gap-1.5 mb-3">
+                <CardContent className="px-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.slice(0, 4).map((tag, index) => (
                       <Badge
                         key={index}
                         variant="secondary"
-                        className="text-[10px] bg-accent/10 text-accent border-accent/20 hover:bg-accent hover:text-white transition-colors"
+                        className="text-xs bg-accent/10 text-accent border-accent/20"
                       >
                         {tag}
                       </Badge>
                     ))}
                     {project.tags.length > 4 && (
-                      <Badge
-                        variant="secondary"
-                        className="text-[10px] bg-accent/10 text-accent border-accent/20"
-                      >
+                      <Badge variant="secondary" className="text-xs bg-accent/10 text-accent border-accent/20">
                         +{project.tags.length - 4} more
                       </Badge>
                     )}
                   </div>
                 </CardContent>
-                <CardFooter className="flex gap-2.5 px-3 pb-3">
+                <CardFooter className="flex gap-3 mt-auto px-4 pb-4">
                   {project.githubUrl && (
-                    <Button variant="outline" size="xs" asChild className="border-accent text-accent hover:bg-accent hover:text-white">
+                    <Button variant="outline" size="sm" asChild className="flex-1 border-accent text-accent hover:bg-accent hover:text-white">
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-3.5 h-3.5 mr-2" />
+                        <Github className="w-4 h-4 mr-2" />
                         Code
                       </a>
                     </Button>
                   )}
                   {project.liveUrl && (
-                    <Button size="xs" asChild className="bg-primary hover:bg-primary/90">
+                    <Button size="sm" asChild className="flex-1 bg-primary hover:bg-primary/90">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-3.5 h-3.5 mr-2" />
-                        Live Demo
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live
                       </a>
                     </Button>
                   )}
