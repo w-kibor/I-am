@@ -88,7 +88,7 @@ export function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Let's Connect</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Open to collaboration opportunities, internships, and discussing exciting data science projects
+            Open to software development opportunities, freelance projects, technical collaborations, and building useful digital products.
           </p>
         </div>
 
@@ -118,8 +118,8 @@ export function Contact() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-1">Based in Kenya</p>
-                <p className="text-sm text-muted-foreground">Open to remote opportunities globally</p>
+                <p className="text-muted-foreground mb-1">Kenya</p>
+                <p className="text-sm text-muted-foreground">Open to remote opportunities globally.</p>
               </CardContent>
             </Card>
 
@@ -159,19 +159,27 @@ export function Contact() {
                 <ul className="space-y-2 text-sm text-foreground">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                    Data Science Internships
+                    Software Development Opportunities
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                    ML/AI Project Collaborations
+                    Freelance & Contract Projects
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                    Research Opportunities
+                    Technical Collaborations
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                    Freelance Projects
+                    Open-Source Projects
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                    AI & Data-Driven Applications
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                    Remote Opportunities
                   </li>
                 </ul>
               </CardContent>
@@ -187,7 +195,7 @@ export function Contact() {
                   Send Me a Message
                 </CardTitle>
                 <CardDescription className="text-base">
-                  I'd love to hear about your project ideas, collaboration opportunities, or just to connect with fellow data enthusiasts!
+                  Have an idea, project, or opportunity you'd like to discuss? I'd love to hear from you.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -241,7 +249,7 @@ export function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      placeholder="Tell me about your project, opportunity, or just say hello! I'm always excited to discuss data science, machine learning, and AI."
+                      placeholder="Tell me about your project, opportunity, or idea! I'd love to hear from you."
                       rows={6}
                       className="border-accent/20 focus:border-accent"
                     />
