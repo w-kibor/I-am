@@ -63,6 +63,12 @@ export function Header() {
             About
           </button>
           <button
+            onClick={() => handleNavClick('experience')}
+            className="text-foreground hover:text-accent transition-colors font-medium"
+          >
+            Experience
+          </button>
+          <button
             onClick={() => handleNavClick('skills')}
             className="text-foreground hover:text-accent transition-colors font-medium"
           >
@@ -122,6 +128,12 @@ export function Header() {
               className="text-left text-foreground hover:text-accent transition-colors font-medium"
             >
               About
+            </button>
+            <button
+              onClick={() => handleNavClick('experience')}
+              className="text-left text-foreground hover:text-accent transition-colors font-medium"
+            >
+              Experience
             </button>
             <button
               onClick={() => handleNavClick('skills')}

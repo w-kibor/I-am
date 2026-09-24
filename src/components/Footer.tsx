@@ -54,6 +54,14 @@ export function Footer() {
               </li>
               <li>
                 <button 
+                  onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-200 hover:text-accent transition-colors hover:underline"
+                >
+                  Professional Experience
+                </button>
+              </li>
+              <li>
+                <button 
                   onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
