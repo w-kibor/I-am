@@ -14,23 +14,23 @@ export function Footer() {
               Software Developer building practical digital solutions with modern web technologies, backend systems, and intelligent applications.
             </p>
             <div className="flex items-center gap-4">
-              <a 
+              <a
                 href="mailto:kiborwilkister29@gmail.com"
                 className="text-gray-300 hover:text-accent transition-colors transform hover:scale-110"
               >
                 <Mail className="w-5 h-5" />
               </a>
-              <a 
-                href="https://github.com/w-kibor" 
-                target="_blank" 
+              <a
+                href="https://github.com/w-kibor"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-accent transition-colors transform hover:scale-110"
               >
                 <Github className="w-5 h-5" />
               </a>
-              <a 
-                href="https://linkedin.com/in/wilkister-kibor" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com/in/wilkister-kibor"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-accent transition-colors transform hover:scale-110"
               >
@@ -44,7 +44,7 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4 text-accent">Quick Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -52,7 +52,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -60,7 +60,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -68,7 +68,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -76,7 +76,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('education')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -84,7 +84,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                   className="text-gray-200 hover:text-accent transition-colors hover:underline"
                 >
@@ -115,11 +115,7 @@ export function Footer() {
                 Git • GitHub • Linux
               </p>
             </div>
-            <div className="mt-4 p-3 bg-accent/10 rounded-lg">
-              <p className="text-xs text-gray-200">
-                🎯 <strong className="text-accent">Currently seeking:</strong> Software development opportunities, internships, and projects where I can build, learn, and contribute.
-              </p>
-            </div>
+
           </div>
         </div>
 
