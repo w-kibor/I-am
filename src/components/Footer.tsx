@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Code } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,8 +11,7 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4 text-accent">Wilkister Kibor</h3>
             <p className="text-gray-200 text-sm mb-4 leading-relaxed">
-              Data Scientist passionate about data science, machine learning, and AI. 
-              Building intelligent solutions to solve real-world problems.
+              Software Developer building practical digital solutions with modern web technologies, backend systems, and intelligent applications.
             </p>
             <div className="flex items-center gap-4">
               <a 
@@ -101,24 +100,24 @@ export function Footer() {
             <div className="text-sm text-gray-200 space-y-1">
               <p className="flex items-center">
                 <Code className="w-3 h-3 mr-2 text-accent" />
-                Python • SQL • scikit-learn
+                PHP • Laravel • JavaScript
               </p>
               <p className="flex items-center">
                 <Code className="w-3 h-3 mr-2 text-accent" />
-                TensorFlow • PyTorch • pandas
+                Python • SQL • REST APIs
               </p>
               <p className="flex items-center">
                 <Code className="w-3 h-3 mr-2 text-accent" />
-                NumPy • Matplotlib • Seaborn
+                React • Flask • MongoDB
               </p>
               <p className="flex items-center">
                 <Code className="w-3 h-3 mr-2 text-accent" />
-                GitHub • AWS • Flask • React
+                Git • GitHub • Linux
               </p>
             </div>
             <div className="mt-4 p-3 bg-accent/10 rounded-lg">
               <p className="text-xs text-gray-200">
-                🎯 <strong className="text-accent">Currently seeking:</strong> Data Science internships and ML project collaborations
+                🎯 <strong className="text-accent">Currently seeking:</strong> Software development opportunities, internships, and projects where I can build, learn, and contribute.
               </p>
             </div>
           </div>
@@ -126,12 +125,10 @@ export function Footer() {
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-sm text-gray-300 flex items-center justify-center gap-2 mb-2">
-            © {currentYear} Wilkister Kibor. Built with 
-            <Heart className="w-4 h-4 text-red-400" /> 
-            and lots of data.
+            © {currentYear} Wilkister Kibor. Built with code, curiosity & lots of coffee.
           </p>
           <p className="text-xs text-gray-400">
-            Transforming data into insights • Building the future with AI
+            Building software • Solving problems • Learning continuously
           </p>
         </div>
       </div>
