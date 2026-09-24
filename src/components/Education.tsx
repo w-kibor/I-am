@@ -6,50 +6,61 @@ import { Button } from './ui/button';
 const education = [
   {
     degree: "Bachelor of Science in Information Technology",
-    specialization: "Data Science, Machine Learning & AI",
+    honours: "Second Class Honours (Upper Division)",
     school: "Kabarak University",
     location: "Nakuru, Kenya",
-    period: "2022 - 2026",
-    status: "Currently Pursuing",
-    description: "Specializing in Data Science, Machine Learning, and Artificial Intelligence with hands-on experience in building real-world applications and solving complex data problems.",
+    period: "2022 – 2026",
+    description: "A broad foundation in information technology, software development, databases, systems analysis, networking, and data-driven technologies, with practical experience applying these concepts to real-world software projects.",
     coursework: [
-      "Advanced Machine Learning",
-      "Deep Learning & Neural Networks",
-      "Data Mining & Analytics",
-      "Statistical Computing",
-      "Database Systems",
       "Software Engineering",
-      "Computer Vision",
-      "Natural Language Processing"
+      "Database Systems",
+      "Web Development",
+      "Systems Analysis & Design",
+      "Data Structures & Algorithms",
+      "Computer Networks",
+      "Operating Systems",
+      "Database Management",
+      "Data Mining & Analytics",
+      "Artificial Intelligence",
+      "Machine Learning"
     ]
   }
 ];
 
-const certifications = [
+interface Certification {
+  title: string;
+  issuer: string;
+  period: string;
+  badgeText: string;
+  description: string;
+  skills: string[];
+  credentialUrl?: string;
+}
+
+const certifications: Certification[] = [
   {
-    title: "Microsoft AI & Machine Learning Course",
+    title: "AI Safari — 4-Week Program",
+    issuer: "Power Learn Project (PLP) / Next Chymia Consulting",
+    period: "2026",
+    badgeText: "Certificate of Completion",
+    description: "Successfully completed a four-week program focused on emerging AI technologies and practical applications, with training in Agentic AI Frameworks, AI Automation, Prompt Engineering, and AI Ethics & Governance.",
+    skills: ["Agentic AI", "AI Automation", "Prompt Engineering", "AI Ethics", "AI Governance"]
+  },
+  {
+    title: "Global Mentorship Initiative",
+    issuer: "Global Mentorship Initiative",
+    period: "2026",
+    badgeText: "Certificate",
+    description: "Completed the Global Mentorship Initiative program, gaining professional development through mentorship, career guidance, and practical exposure to workplace and professional skills.",
+    skills: ["Professional Development", "Career Growth", "Mentorship", "Communication"]
+  },
+  {
+    title: "Microsoft AI & Machine Learning",
     issuer: "Microsoft",
     period: "2024",
-    description: "Comprehensive certification covering Azure AI services, machine learning model development, and deployment strategies.",
-    skills: ["Azure ML", "AI Services", "Model Deployment", "MLOps"],
-    verified: true,
-    credentialUrl: "https://example.com/certificate"
-  },
-  {
-    title: "Python for Data Science",
-    issuer: "Online Learning Platform",
-    period: "2023",
-    description: "Advanced Python programming for data analysis, machine learning, and statistical computing.",
-    skills: ["Python", "pandas", "NumPy", "Matplotlib"],
-    verified: true
-  },
-  {
-    title: "Machine Learning Fundamentals",
-    issuer: "Coursera",
-    period: "2023",
-    description: "Core concepts in supervised and unsupervised learning, model evaluation, and feature engineering.",
-    skills: ["scikit-learn", "TensorFlow", "Model Evaluation"],
-    verified: true
+    badgeText: "Credential",
+    description: "Completed Microsoft training focused on artificial intelligence and machine learning concepts, with practical exposure to AI technologies and machine learning workflows.",
+    skills: ["Artificial Intelligence", "Machine Learning", "AI Development"]
   }
 ];
 
@@ -78,33 +89,32 @@ export function Education() {
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
                       <div className="flex-1">
-                        <CardTitle className="text-xl text-primary mb-2">{edu.degree}</CardTitle>
-                        <CardDescription className="text-accent font-medium text-base mb-1">
-                          {edu.specialization}
-                        </CardDescription>
-                        <p className="text-primary font-medium">{edu.school}</p>
+                        <CardTitle className="text-xl text-primary mb-1">{edu.degree}</CardTitle>
+                        {edu.honours && (
+                          <p className="text-accent font-semibold text-base mb-1">
+                            {edu.honours}
+                          </p>
+                        )}
+                        <p className="text-primary font-medium text-base">{edu.school}</p>
                       </div>
                       <div className="text-sm text-muted-foreground mt-3 md:mt-0">
                         <div className="flex items-center mb-1">
-                          <MapPin className="w-4 h-4 mr-1" />
+                          <MapPin className="w-4 h-4 mr-1 text-accent" />
                           {edu.location}
                         </div>
                         <div className="flex items-center mb-1">
-                          <Calendar className="w-4 h-4 mr-1" />
+                          <Calendar className="w-4 h-4 mr-1 text-accent" />
                           {edu.period}
                         </div>
-                        <Badge variant="secondary" className="bg-accent/10 text-accent">
-                          {edu.status}
-                        </Badge>
                       </div>
                     </div>
                     <CardDescription className="text-base leading-relaxed">{edu.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <h4 className="font-medium mb-3 text-primary">Relevant Coursework:</h4>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="flex flex-wrap gap-2">
                       {edu.coursework.map((course, i) => (
-                        <Badge key={i} variant="outline" className="justify-start p-2 text-xs border-accent/20 text-foreground">
+                        <Badge key={i} variant="outline" className="p-2 text-xs border-accent/20 text-foreground bg-accent/5">
                           {course}
                         </Badge>
                       ))}
@@ -120,33 +130,33 @@ export function Education() {
         <div>
           <h3 className="text-2xl font-bold mb-8 flex items-center text-primary">
             <Award className="w-6 h-6 mr-3 text-accent" />
-            Professional Certifications
+            Certifications & Professional Development
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-accent">
+              <Card key={index} className="hover:shadow-lg transition-shadow border-l-4 border-l-accent flex flex-col">
                 <CardHeader>
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex items-start justify-between mb-2 gap-2">
                     <CardTitle className="text-lg text-primary leading-tight">{cert.title}</CardTitle>
-                    {cert.verified && (
-                      <Badge variant="secondary" className="bg-accent/10 text-accent text-xs">
-                        Verified
+                    {cert.badgeText && (
+                      <Badge variant="secondary" className="bg-accent/10 text-accent text-xs shrink-0">
+                        {cert.badgeText}
                       </Badge>
                     )}
                   </div>
                   <div className="flex items-center justify-between text-sm">
                     <p className="text-accent font-medium">{cert.issuer}</p>
-                    <span className="text-muted-foreground">{cert.period}</span>
+                    <span className="text-muted-foreground font-medium">{cert.period}</span>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex flex-col flex-1 justify-between">
                   <CardDescription className="text-sm mb-4 leading-relaxed">
                     {cert.description}
                   </CardDescription>
-                  <div className="space-y-3">
+                  <div className="space-y-3 mt-auto">
                     <div>
-                      <h5 className="text-sm font-medium mb-2 text-primary">Skills Gained:</h5>
-                      <div className="flex flex-wrap gap-1">
+                      <h5 className="text-xs font-semibold uppercase tracking-wider mb-2 text-muted-foreground">Skills & Topics:</h5>
+                      <div className="flex flex-wrap gap-1.5">
                         {cert.skills.map((skill, i) => (
                           <Badge key={i} variant="secondary" className="text-xs bg-secondary text-foreground">
                             {skill}
@@ -155,9 +165,9 @@ export function Education() {
                       </div>
                     </div>
                     {cert.credentialUrl && (
-                      <Button variant="outline" size="sm" className="w-full border-accent text-accent hover:bg-accent hover:text-white" asChild>
+                      <Button variant="outline" size="sm" className="w-full border-accent text-accent hover:bg-accent hover:text-white mt-2" asChild>
                         <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink className="w-3 h-3 mr-2" />
+                          <ExternalLink className="w-3.5 h-3.5 mr-2" />
                           View Credential
                         </a>
                       </Button>
