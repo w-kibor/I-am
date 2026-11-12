@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat, Truck } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat, Truck, GraduationCap, Compass } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -14,6 +14,28 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        id: "11",
+        title: "Kepa Mara Safaris",
+        description: "Bespoke luxury safari and tour booking platform across Kenya's premier destinations",
+        longDescription: "Kepa Mara Safaris is a luxury tour and travel platform dedicated to curating tailor-made Kenyan safari experiences. Featuring custom itineraries across the Maasai Mara, Amboseli, Samburu, and Diani Beach, the platform connects travelers with authentic wildlife adventures and elegant hospitality.",
+        image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        tags: ["Tourism", "Travel", "Kenya Safaris", "Booking", "Web Development"],
+        liveUrl: "https://kepamarasafaris.com",
+        metrics: "Luxury Safari Tours",
+        icon: Compass
+    },
+    {
+        id: "10",
+        title: "E-Flex",
+        description: "Interactive e-learning and digital education platform for students and educators",
+        longDescription: "E-Flex is a digital learning platform designed to streamline course delivery, academic stream management, assignments, and interactive quizzes. It connects students and teachers with real-time educational resources, progress tracking, and structured coursework.",
+        image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        tags: ["React", "TypeScript", "E-Learning", "EdTech", "Tailwind CSS", "Vercel"],
+        liveUrl: "https://e-flex-zeta.vercel.app/",
+        metrics: "E-Learning Platform",
+        icon: GraduationCap
+    },
     {
         id: "9",
         title: "SwiftDrop",
