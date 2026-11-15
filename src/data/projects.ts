@@ -1,4 +1,4 @@
-import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat, Truck, GraduationCap, Compass } from 'lucide-react';
+import { Monitor, Shield, TrendingUp, Globe, ShoppingBag, BookOpen, ChefHat, Truck, GraduationCap, Compass, AirVent } from 'lucide-react';
 
 export interface Project {
     id: string;
@@ -14,6 +14,17 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        id: "12",
+        title: "SkyCool",
+        description: "Modern corporate website for HVAC and air conditioning systems and services",
+        longDescription: "SkyCool is a corporate website developed for an HVAC and air conditioning business. The platform showcases specialized heating, cooling, and air ventilation services, equipment maintenance solutions, and seamless consultation requests for residential and commercial clients.",
+        image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        tags: ["React", "TypeScript", "HVAC", "Air Conditioning", "Tailwind CSS"],
+        githubUrl: "https://github.com/w-kibor/skycool",
+        metrics: "HVAC & Climate Control",
+        icon: AirVent
+    },
     {
         id: "11",
         title: "Kepa Mara Safaris",

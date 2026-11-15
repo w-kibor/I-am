@@ -7,11 +7,8 @@ import { projects } from '../data/projects';
 import { Link } from 'react-router-dom';
 
 export function Projects() {
-  // Prioritize projects with live demos, displaying the top featured projects
-  const featuredProjects = [
-    ...projects.filter((project) => project.liveUrl),
-    ...projects.filter((project) => !project.liveUrl),
-  ].slice(0, 8);
+  // Display top featured projects directly from projects list
+  const featuredProjects = projects.slice(0, 8);
 
   return (
     <section id="projects" className="py-20 bg-background">
