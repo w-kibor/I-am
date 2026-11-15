@@ -22,6 +22,7 @@ export const projects: Project[] = [
         image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         tags: ["React", "TypeScript", "HVAC", "Air Conditioning", "Tailwind CSS"],
         githubUrl: "https://github.com/w-kibor/skycool",
+        liveUrl: "https://skycool-d9za.onrender.com",
         metrics: "HVAC & Climate Control",
         icon: AirVent
     },
